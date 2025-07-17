@@ -1,0 +1,79 @@
+ 
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .bg-fire {
+            background-color: #ffddc1;
+        }
+
+        .bg-water {
+            background-color: #c1e0ff;
+        }
+
+        .bg-grass {
+            background-color: #64f036;
+        }
+        .bg-normal {
+            background-color: #cecdcd;
+        }
+        .bg-electric {
+            background-color: #f7de00;
+        }
+        .bg-ice {
+            background-color: #6adefc;
+        }
+        .bg-fighting {
+            background-color: #f07706;
+        }
+        .bg-poison {
+            background-color: #a624e2;
+        }
+        .bg-ground {
+            background-color: #a04b05;
+        }
+        .bg-flying {
+            background-color: #02eeff;
+        }
+        .bg-psychic {
+            background-color: #e722b6;
+        }
+        .bg-bug {
+            background-color: #d1ffc1;
+        }
+        .bg-rock {
+            background-color: #dfa860;
+        }
+        .bg-ghost {
+            background-color: #c793f1;
+        }
+        .bg-dragon {
+            background-color: #4143bb;
+        }
+        .bg-steel {
+            background-color: #727272;
+        }
+        .bg-dark {
+            background-color: #524e4e !important;
+        }
+        .bg-fairy {
+            background-color: #e2a5bc;
+        }
+
+        .card-img-top {
+         max-width: 100%;
+         height: auto;
+        }
+        
+        
+
+
+
+
+        
+        
+    
