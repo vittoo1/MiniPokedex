@@ -3,6 +3,7 @@
         const quitarBtn = document.getElementById("quitarBtn");
         const buscarBtn = document.getElementById("buscarBtn");
         const buscador = document.getElementById("buscador");
+        const limpiarBtn = document.getElementById("limpiarBtn"); // 🎁 Botón para limpiar 
 
         // 💡Evita caracteres no alfanuméricos del input
         buscador.addEventListener("input", function () {
@@ -35,7 +36,7 @@
             }
         }
 
-        function crearCarta(pokemon) {
+       function crearCarta(pokemon) {
             const div = document.createElement("div");
             div.classList.add("col");
 
@@ -64,6 +65,7 @@
             return div;
         }
 
+
         agregarBtn.addEventListener("click", async () => {
             const pokemon = await obtenerPokemon(contadorPokemon);
             if (pokemon) {
@@ -85,7 +87,7 @@
             const valor = buscador.value.toLowerCase().trim();
             if (!valor) {
                 alert("Ingrese nombre o ID válido") // 💡Mensaje de alerta si se ingresa un nombre o id no valido
-            return; 
+                return;
             }
 
             const pokemon = await obtenerPokemon(valor);
@@ -96,7 +98,7 @@
             }
         });
 
-        // Funcionalidad del boton para limpiar
+         // Funcionalidad del boton para limpiar
         limpiarBtn.addEventListener("click", () => {
             contenedor.innerHTML = "";
              contadorPokemon = 1;
@@ -114,11 +116,9 @@
          }
          });
         }
- 
+
         // Funcionalidad para volver al estado antes de aplicar el filtro
         function mostrarTodos() {
         const cartas = contenedor.querySelectorAll(".col");
         cartas.forEach(carta => carta.style.display = "block");
         }
-
-        

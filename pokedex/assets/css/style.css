@@ -122,3 +122,10 @@
         opacity: 1;
         transition: opacity 0.3s ease;
         }
+
+        /* 🎁 Añade un hover, para un efecto de acercamiento
+            cuando se señala con el cursor del mouse */
+        .card:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        }

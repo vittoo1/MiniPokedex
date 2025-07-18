@@ -24,7 +24,7 @@ pokedex/
 ## 💡 Mejoras funcionales
 
 - [✅] Mostrar detalles adicionales: peso, altura, habilidades.
-- [ ] Agregar buscador funcional por nombre o ID (ya está, pero mejorarlo).
+- [✅] Agregar buscador funcional por nombre o ID (ya está, pero mejorarlo).
 - [✅] Agregar filtro por tipo (por ejemplo, botón "Mostrar solo tipo fuego").
 - [✅] Cambiar color de fondo de la tarjeta según tipo.
 - [ ] Guardar favoritos en `localStorage` y mostrarlos en una sección aparte.
@@ -39,8 +39,8 @@ Distribúyanse en el equipo para dividir las tareas y entregar una Pokédex más
 
 ## 🎁 Bonus
 
--  Implementa animaciones simples al agregar tarjetas.
--  Haz responsive la Pokédex (mejorar visualización en celular).
+- ✅ Implementa animaciones simples al agregar tarjetas.
+- ✅ Haz responsive la Pokédex (mejorar visualización en celular).
 - ✅ Agrega un botón “Limpiar Pokédex”.
 
 ---
