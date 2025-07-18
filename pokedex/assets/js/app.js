@@ -14,6 +14,7 @@
 
                 return {
                     nombre: data.name,
+                    idPokemon: data.id,
                     imagen: data.sprites.other["official-artwork"].front_default,
                     tipo: data.types.map(t => t.type.name).join(", "),
                     tipos: data.types.map(t => t.type.name),
@@ -42,6 +43,7 @@
                 <img src="${pokemon.imagen}" class="card-img-top bg-white" style="object-fit: contain; height: 200px;" alt="${pokemon.nombre}">
                 <div class="card-body">
                     <h5 class="card-title text-capitalize">${pokemon.nombre}</h5>
+                    <h6 class="card-title text-capitalize">n° ID: ${pokemon.idPokemon}</h6>
                     <p class="card-text"><strong>Tipo:</strong> ${pokemon.tipo}</p>
                     <p class="card-text"><strong>Exp:</strong> ${pokemon.experiencia}</p>
                     <p class="card-text"><strong>Peso:</strong> ${pokemon.peso} | <strong>Altura:</strong> ${pokemon.altura}</p>
@@ -84,3 +86,22 @@
             contenedor.innerHTML = "";
              contadorPokemon = 1;
         });
+
+        function filtrarPorTipo(tipo) {
+         const cartas = contenedor.querySelectorAll(".col");
+        cartas.forEach(carta => {
+         const tipoTexto = carta.querySelector(".card-text").textContent.toLowerCase();
+         if (tipoTexto.includes(tipo)) {
+        carta.style.display = "block";
+         } else {
+         carta.style.display = "none";
+         }
+         });
+        }
+ 
+        function mostrarTodos() {
+        const cartas = contenedor.querySelectorAll(".col");
+        cartas.forEach(carta => carta.style.display = "block");
+        }
+
+        

@@ -17,15 +17,21 @@
         <div class="d-flex justify-content-center gap-3 mb-4">
             <button id="agregarBtn" class="btn btn-success">Agregar Pokémon</button>
             <button id="quitarBtn" class="btn btn-danger">Quitar Último</button>
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+        </div>
+        </div>
+        <div class="d-flex justify-content-center gap-3 mb-4">Filtrar por:
+            <button id="filtrarFuegoBtn" class="btn btn-outline-danger" onclick="filtrarPorTipo('fire')">🔥 Fuego</button>
+            <button class="btn btn-outline-primary" onclick="filtrarPorTipo('water')">💧 Agua</button>
+            <button class="btn btn-outline-success" onclick="filtrarPorTipo('grass')">🌿 Planta</button>
+            <button class="btn btn-outline-dark" onclick="mostrarTodos()">Mostrar todos</button>
         </div>
 
         <div class="row mb-4">
             <div class="col-md-6 offset-md-3">
                 <input id="buscador" type="text" class="form-control mb-2" placeholder="Buscar por nombre o ID">
                 <button id="buscarBtn" class="btn btn-primary w-100">Buscar Pokémon</button>
-                <button id="limpiarBtn" class="btn btn-warning w-100 mt-2">
-                Limpiar Pokédex
-                </button>
+                <button id="limpiarBtn" class="btn btn-warning w-100 mt-2">Limpiar Pokédex</button>
             </div>
         </div>
 
