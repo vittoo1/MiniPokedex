@@ -101,3 +101,24 @@
          height: auto;
         }
     
+        /* 🎁 Llama por el ID pokedex, ajusta el margen y
+         ancho maximo de las cartas, especial para telefonos */
+        #pokedex .card {
+        margin: 0 auto;
+        max-width: 300px;
+        }
+
+        /* 🎁 Transicion entre el uso de 'transform' y 'opacity'*/
+        .card {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* 🎁 Animación en cero, la carta es invisible al agregar */
+        .animacion-inicial {
+        opacity: 0;
+        }
+        /* 🎁 Animación de aparición después de agregar */
+        .animacion-inicial.mostrar {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        }
