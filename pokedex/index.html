@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Pokédex</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-   
 </head>
 
 <body>
@@ -14,36 +13,42 @@
         <h1 class="text-center mb-2">Mini Pokédex</h1>
         <h2 class="text-center mb-4">Bienvenido entrenador</h2>
 
+        <!-- Botones Agregar y Quitar -->
         <div class="d-flex justify-content-center gap-3 mb-4">
             <button id="agregarBtn" class="btn btn-success">Agregar Pokémon</button>
             <button id="quitarBtn" class="btn btn-danger">Quitar Último</button>
-            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
         </div>
-        </div>
-        <div class="d-flex justify-content-center gap-3 mb-4">Filtrar por:
+
+        <!-- Filtros por tipo: fuego, agua y planta -->
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-4"> <!-- Flex-wrap para mejor adaptacion en pantalla-->
+            <span class="fw-bold align-self-center">Filtrar por:</span>
             <button id="filtrarFuegoBtn" class="btn btn-outline-danger" onclick="filtrarPorTipo('fire')">🔥 Fuego</button>
             <button class="btn btn-outline-primary" onclick="filtrarPorTipo('water')">💧 Agua</button>
             <button class="btn btn-outline-success" onclick="filtrarPorTipo('grass')">🌿 Planta</button>
             <button class="btn btn-outline-dark" onclick="mostrarTodos()">Mostrar todos</button>
         </div>
 
+        <!-- Buscador -->
         <div class="row mb-4">
             <div class="col-md-6 offset-md-3">
                 <input id="buscador" type="text" class="form-control mb-2" placeholder="Buscar por nombre o ID">
                 <button id="buscarBtn" class="btn btn-primary w-100">Buscar Pokémon</button>
-                <button id="limpiarBtn" class="btn btn-warning w-100 mt-2">Limpiar Pokédex</button>
+                <button id="limpiarBtn" class="btn btn-warning w-100 mt-2">Limpiar Pokédex</button> <!-- 🎁 Botón para limpiar -->
             </div>
         </div>
 
+        <!-- Contenedor de cartas -->
         <div id="pokedex" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <!-- Cartas -->
         </div>
     </div>
 
-<script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+        
 </body>
 
 </html>

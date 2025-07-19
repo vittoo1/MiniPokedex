@@ -1,79 +1,131 @@
- 
-        body {
-            font-family: 'Segoe UI', sans-serif;
+        /* Variables globales con el selector "root" 
+        para refereir al elemento raiz del html
+        y en este caso definir colores*/
+        :root {
+            --color-normal:   #cecdcd;
+            --color-fire:     #EE8130;
+            --color-water:    #6390F0;
+            --color-electric: #F7D02C;
+            --color-grass:    #7AC74C;
+            --color-ice:      #96D9D6;
+            --color-fighting: #C22E28;
+            --color-poison:   #A33EA1;
+            --color-ground:   #E2BF65;
+            --color-flying:   #44b7bf;
+            --color-psychic:  #F95587;
+            --color-bug:      #d1ffc1;
+            --color-rock:     #dfa860;
+            --color-ghost:    #735797;
+            --color-dragon:   #4143bb;
+            --color-dark:     #524e4e;
+            --color-steel:    #B7B7CE;
+            --color-fairy:    #D685AD;
         }
 
-        .card-title {
-            font-weight: bold;
-        }
+        /* 💡Cambiar el color de las tarjetas según el tipo de Pokemon*/
 
         .bg-fire {
-            background-color: #ffddc1;
+            background-color: var(--color-fire);
         }
 
         .bg-water {
-            background-color: #c1e0ff;
+            background-color: var(--color-water);
         }
 
         .bg-grass {
-            background-color: #64f036;
+            background-color: var(--color-grass);
         }
+
         .bg-normal {
-            background-color: #cecdcd;
+            background-color: var(--color-normal);
         }
+
         .bg-electric {
-            background-color: #f7de00;
+            background-color: var(--color-electric);
         }
+
         .bg-ice {
-            background-color: #6adefc;
+            background-color: var(--color-ice);
         }
+
         .bg-fighting {
-            background-color: #f07706;
+            background-color: var(--color-fighting);
         }
+
         .bg-poison {
-            background-color: #a624e2;
+            background-color: var(--color-poison);
         }
+
         .bg-ground {
-            background-color: #a04b05;
+            background-color: var(--color-ground);
         }
+
         .bg-flying {
-            background-color: #02eeff;
+            background-color: var(--color-flying);
         }
+
         .bg-psychic {
-            background-color: #e722b6;
+            background-color: var(--color-psychic);
         }
+
         .bg-bug {
-            background-color: #d1ffc1;
+            background-color: var(--color-bug);
         }
+
         .bg-rock {
-            background-color: #dfa860;
+            background-color: var(--color-rock);
         }
+
         .bg-ghost {
-            background-color: #c793f1;
+            background-color: var(--color-ghost);
         }
+
         .bg-dragon {
-            background-color: #4143bb;
+            background-color: var(--color-dragon);
         }
+
         .bg-steel {
-            background-color: #727272;
+            background-color: var(--color-steel);
         }
+
         .bg-dark {
-            background-color: #524e4e !important;
+            background-color: var(--color-dark) !important;
         }
+
         .bg-fairy {
-            background-color: #e2a5bc;
+            background-color: var(--color-fairy);
         }
 
         .card-img-top {
          max-width: 100%;
          height: auto;
         }
-        
-        
-
-
-
-
-        
-        
     
+        /* 🎁 Llama por el ID pokedex, ajusta el margen y
+         ancho maximo de las cartas, especial para telefonos */
+        #pokedex .card {
+        margin: 0 auto;
+        max-width: 300px;
+        }
+
+        /* 🎁 Transicion entre el uso de 'transform' y 'opacity'*/
+        .card {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* 🎁 Animación en cero, la carta es invisible al agregar */
+        .animacion-inicial {
+        opacity: 0;
+        }
+        /* 🎁 Animación de aparición después de agregar */
+        .animacion-inicial.mostrar {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        }
+
+        /* 🎁 Añade un hover, para un efecto de acercamiento
+            cuando se señala con el cursor del mouse */
+        .card:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        }
