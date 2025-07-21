@@ -22,9 +22,6 @@
         <!-- Filtros por tipo: fuego, agua y planta -->
         <div class="d-flex flex-wrap justify-content-center gap-3 mb-4"> <!-- Flex-wrap para mejor adaptacion en pantalla-->
             <span class="fw-bold align-self-center">Filtrar por:</span>
-            <button id="filtrarFuegoBtn" class="btn btn-outline-danger" onclick="filtrarPorTipo('fire')">🔥 Fuego</button>
-            <button class="btn btn-outline-primary" onclick="filtrarPorTipo('water')">💧 Agua</button>
-            <button class="btn btn-outline-success" onclick="filtrarPorTipo('grass')">🌿 Planta</button>
             <button class="btn btn-outline-dark" onclick="mostrarTodos()">Mostrar todos</button>
         </div>
 
@@ -34,6 +31,31 @@
                 <input id="buscador" type="text" class="form-control mb-2" placeholder="Buscar por nombre o ID">
                 <button id="buscarBtn" class="btn btn-primary w-100">Buscar Pokémon</button>
                 <button id="limpiarBtn" class="btn btn-warning w-100 mt-2">Limpiar Pokédex</button> <!-- 🎁 Botón para limpiar -->
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-6 offset-md-3">
+            <select id="filtroTipo" class="form-select" style="max-width: 180px;">
+                <option value="">Filtrar por tipo</option>
+                <option value="grass">🌿 Planta</option>
+                <option value="fire">🔥 Fuego</option>
+                <option value="water">💧 Agua</option>
+                <option value="normal">⚪️ Normal</option>
+                <option value="electric">⚡ Eléctrico</option>
+                <option value="ice">🧊 Hielo</option>
+                <option value="fighting">👊 Lucha</option>
+                <option value="poison">☠️ Veneno</option>
+                <option value="ground">🏔️ Tierra</option>
+                <option value="flying">🌪️ Volador</option>
+                <option value="psychic">👁️ Psiquico</option>
+                <option value="bug">🕸️ Bicho</option>
+                <option value="rock">🗿 Roca</option>
+                <option value="ghost">👻 Fantasma</option>
+                <option value="dragon">🐲 Dragón</option>
+                <option value="dark">🌙 Oscuro</option>
+                <option value="steel">⚙️ Acero</option>
+                <option value="fairy">🧚‍♀️ Hada</option></select>
             </div>
         </div>
 
