@@ -122,3 +122,68 @@
         const cartas = contenedor.querySelectorAll(".col");
         cartas.forEach(carta => carta.style.display = "block");
         }
+
+        const sel = document.getElementById('filtroTipo');
+        sel.addEventListener('change', function() {
+
+        if (!this.value) return;
+
+        switch (this.value) {
+        case 'grass':
+           filtrarPorTipo('grass');
+           break;
+        case 'fire':
+           filtrarPorTipo('fire');
+           break;
+        case 'water':
+           filtrarPorTipo('water');
+           break;
+        case 'fire':
+           filtrarPorTipo('fire');
+           break;
+        case 'normal':
+           filtrarPorTipo('normal');
+           break;
+        case 'electric':
+           filtrarPorTipo('electric');
+           break;
+        case 'ice':
+           filtrarPorTipo('ice');
+           break;
+        case 'fighting':
+           filtrarPorTipo('fighting');
+           break;
+        case 'poison':
+           filtrarPorTipo('poison');
+           break;
+        case 'ground':
+           filtrarPorTipo('ground');
+           break;
+        case 'flying':
+           filtrarPorTipo('flying');
+           break;
+        case 'psychic':
+           filtrarPorTipo('psychic');
+           break;
+        case 'bug':
+           filtrarPorTipo('bug');
+           break;
+        case 'rock':
+           filtrarPorTipo('rock');
+           break;
+        case 'ghost':
+           filtrarPorTipo('ghost');
+           break;
+        case 'dragon':
+           filtrarPorTipo('dragon');
+           break;
+        case 'steel':
+           filtrarPorTipo('steel');
+           break;
+        case 'dark':
+           filtrarPorTipo('dark');
+           break;
+        case 'fairy':
+           filtrarPorTipo('fairy');
+           break;
+        }})
