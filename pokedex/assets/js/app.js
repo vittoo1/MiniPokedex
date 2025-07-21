@@ -129,6 +129,9 @@
         if (!this.value) return;
 
         switch (this.value) {
+        case ' ':
+            mostrarTodos()
+            break;
         case 'grass':
            filtrarPorTipo('grass');
            break;
